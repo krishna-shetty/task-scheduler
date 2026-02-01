@@ -1,0 +1,8 @@
+services:
+  task-scheduler:
+    image: task-scheduler
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
